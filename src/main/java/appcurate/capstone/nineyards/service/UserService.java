@@ -41,6 +41,7 @@ public class UserService {
 
     public Map<String, Object> addUser(User user){
         userMapper.insertUser(user);
+        logger.info("Add a new User");
         return Map.of("userMsg", "Put user success!");
     }
 }
