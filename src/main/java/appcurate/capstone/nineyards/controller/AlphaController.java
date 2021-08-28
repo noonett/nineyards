@@ -29,7 +29,6 @@ public class AlphaController {
     /*
         GET请求
      */
-
     // /register?name=tyh&password=123456  (在请求Url上带参数)
     @RequestMapping(path = "register", method = RequestMethod.GET)
     @ResponseBody

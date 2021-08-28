@@ -8,13 +8,13 @@ public interface NineyardConstants {
     String AUTHORITY_USER = "user";
 
     /**
-     * Authority: admin
+     * Authority: Project Manager
      */
-    String AUTHORITY_ADMIN = "admin";
+    String AUTHORITY_PM = "pm";
 
     /**
      * Authority: Client
      */
-    String AUTHORITY_MODERATOR = "moderator";
+    String AUTHORITY_Client = "client";
 
 }

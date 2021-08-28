@@ -7,11 +7,11 @@
 <mapper namespace="appcurate.capstone.nineyards.dao.UserMapper">
 
     <sql id="insertFields">
-        username, password, salt, email, type, status, activation_code, header_url, create_time
+        username, password, company, salt, email, type, status, activation_code, header_url, create_time
     </sql>
 
     <sql id="selectFields">
-        id, username, password, salt, email, type, status, activation_code, header_url, create_time
+        id, username, password, company, salt, email, type, status, activation_code, header_url, create_time
     </sql>
 
     <select id="selectById" resultType="User">
@@ -34,7 +34,7 @@
 
     <insert id="insertUser" parameterType="User" keyProperty="id">
         insert into user (<include refid="insertFields"></include>)
-        values(#{username}, #{password}, #{salt}, #{email}, #{type}, #{status}, #{activationCode}, #{headerUrl}, #{createTime})
+        values(#{username}, #{password}, #{company}, #{salt}, #{email}, #{type}, #{status}, #{activationCode}, #{headerUrl}, #{createTime})
     </insert>
 
     <update id="updateStatus">

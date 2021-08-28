@@ -3,6 +3,7 @@ CREATE TABLE `user` (
   `id` int NOT NULL AUTO_INCREMENT,
   `username` varchar(50) DEFAULT NULL,
   `password` varchar(50) DEFAULT NULL,
+  `company` varchar(50) DEFAULT NULL,
   `salt` varchar(50) DEFAULT NULL,
   `email` varchar(100) DEFAULT NULL,
   `type` int DEFAULT NULL COMMENT '0- Project Member; 1- Project Manager; 2- Client;',
