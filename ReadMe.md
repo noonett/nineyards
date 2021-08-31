@@ -11,6 +11,9 @@ Project Management software
 ## Package structure 
    ![Package structure](./src/main/resources/static/img/pkg_struc.png)
 
+## Version Control
+Git
+
 ## Getting start
 1. Load Project.
 2. Install MySQL 8.0.21.
@@ -20,3 +23,5 @@ Project Management software
    ![Maven build](./src/main/resources/static/img/build.png) 
 5. Run the main method:
    ![run](./src/main/resources/static/img/run.png)
+
+
