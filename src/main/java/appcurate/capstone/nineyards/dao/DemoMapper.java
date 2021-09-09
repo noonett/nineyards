@@ -1,20 +1,20 @@
 package appcurate.capstone.nineyards.dao;
 
-import appcurate.capstone.nineyards.entity.User;
+import appcurate.capstone.nineyards.entity.Demo;
 import org.apache.ibatis.annotations.Mapper;
 import org.springframework.stereotype.Repository;
 
 @Mapper //声明DAO接口，也可以用@Repository，不需要实现，SpringBoot通过.xml文件自动实现
 @Repository
-public interface UserMapper {
+public interface DemoMapper {
 
-    User selectById(int id);
+    Demo selectById(int id);
 
-    User selectByName(String username);
+    Demo selectByName(String username);
 
-    User selectByEmail(String email);
+    Demo selectByEmail(String email);
 
-    int insertUser(User user);
+    int insertUser(Demo demo);
 
     int updateStatus(int id, int status);
 

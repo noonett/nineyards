@@ -1,6 +1,6 @@
 package appcurate.capstone.nineyards.controller;
 
-import appcurate.capstone.nineyards.entity.User;
+import appcurate.capstone.nineyards.entity.Demo;
 import appcurate.capstone.nineyards.service.UserService;
 import appcurate.capstone.nineyards.util.NineyardsUtil;
 import org.springframework.beans.factory.annotation.Autowired;
@@ -35,12 +35,12 @@ public class AlphaController {
     public String register(   //传入的参数,RequestParam还可以设置参数
                                  @RequestParam(name = "name", required = false, defaultValue = "tyh") String name,
                                  @RequestParam(name = "password", required = false, defaultValue = "123456") String password) {
-        User user = User.builder()
+        Demo demo = Demo.builder()
                 .username(name)
                 .password(password)
                 .build();
 
-        Map<String, Object> map = userService.addUser(user);
+        Map<String, Object> map = userService.addUser(demo);
         return NineyardsUtil.getJSONString(200, (String) map.get("userMsg"));
     }
 

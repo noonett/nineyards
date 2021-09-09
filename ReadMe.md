@@ -16,12 +16,10 @@ Project Management software
    ![Package structure](./src/main/resources/static/img/pkg_struc.png)
 
 
-sdfasdf
-
 ## Getting start
 1. Load Project.
 2. Install MySQL 8.0.21.
-3. Run schema_ddl.sql in MySQL to create database and demo schema.
+3. Run schema_ddl.sql in MySQL to create database and schema.
 4. Build before run (make sure you get all .jar)
     - mvn clean install -Dmaven.test.skip=true 
    ![Maven build](./src/main/resources/static/img/build.png) 
@@ -29,3 +27,6 @@ sdfasdf
    ![run](./src/main/resources/static/img/run.png)
 
 
+## Commit message style
+1. fix: fix bug (eg: fix: can't find user error).
+2. feat: add new function (eg: feat: add userMapper)
